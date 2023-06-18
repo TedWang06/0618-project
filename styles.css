@@ -1,0 +1,160 @@
+* {
+    font-family: Microsoft JhengHei;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    display: flex;
+    padding: 50px 50px;
+    height: calc(100vh - 100px);
+}
+
+.leftWrap {
+    width: 25%;
+    /* height: calc(100vh - 20px); */
+    /* background-color: red; */
+    border: 1px solid black;
+}
+
+.leftWrap button {
+    cursor: pointer;
+}
+
+.leftWrap button.buttonClick {
+    background-color: #9bb9de;
+}
+
+.leftWrap button:hover {
+    background-color: #a6ccfb;
+}
+
+.parentLayerButton {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+}
+
+.parentLayerButton::before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\2b";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+    z-index: 3;
+    color: black;
+}
+
+.minus::before {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f068";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 3px;
+    z-index: 3;
+    color: black;
+}
+
+.LayerGroupsButton {
+    display: none;
+}
+
+.LayerGroupsButton button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.LayerGroupsButtonAdd {
+    display: block;
+}
+
+.rightWrap {
+    width: 75%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.rightWrapTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.rightWrapTop label {
+    margin-right: 5px;
+} 
+
+.rightWrapTop input {
+    margin-right: 10px;
+} 
+
+.rightWrapTop button {
+    padding: 0 5px;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+
+.rightWrap table {
+    width: 100%;
+}
+
+.rightWrap table th {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.rightWrap table td {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.rightWrap table td button {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+/* #createLayerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.416);
+    z-index: 5;
+} */
+
+/* #createLayer { */
+    /* position: absolute; */
+    /* top: 50%;
+    right: 50%;
+    padding: 10px;
+    background-color: white;
+    transform: translate(-50%, -50%); */
+/* } */
+
+#createLayer div {
+    margin-bottom: 10px;
+}
+
+#createLayer label {
+    margin-right: 5px;
+}
+
+#createLayer button {
+    margin-right: 5px;
+    padding: 0 5px;
+    cursor: pointer;
+}
