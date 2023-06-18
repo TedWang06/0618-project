@@ -22,22 +22,14 @@
 <script src="main.js" type="module"></script>
 
 <body>
-
     <div class="wrap">
-        <!-- {{currentGroupId}} -->
         <!-- 左側表單 -->
         <layer-group-list :menu-data="menuData" :group-data="groupData" v-model="currentGroupId"></layer-group-list>
-
         <!-- 右側表單 -->
         <div class="rightWrap">
             <layer-data :current-group-id="currentGroupId" :original-layer-data="originalLayerData" @delete="deleteData"
                 @add="addData" @edit="editData"></layer-data>
-           
-
         </div>
     </div>
-
-
 </body>
-
 </html>

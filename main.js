@@ -190,7 +190,6 @@ function submit(value) {
 }
 
 function unSubmit(value) {
-    debugger;
     this.isShow = value;
 }
 
